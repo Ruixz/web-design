@@ -1,0 +1,39 @@
+Header
+	Sign in / Register
+	Link to mobile site
+	Text size
+	Drop down select box of links to other parts of site
+Advert
+Site name / link to home page
+Search
+
+Navigation
+	News, Sport, Comment, Culture, Business, Money, Life & Style,
+	Travel, Environment, Blogs, Video, Community, Jobs
+
+Breadcrumb trail
+
+Article
+
+Title
+Summary
+Author
+Date
+Article history
+Main photograph
+Photograph caption
+Article body
+
+Social media links
+	Buzz Up, Digg
+Tools
+	Print, Send to friend, Share, Clip, Contact
+
+Change text size
+
+Related article links
+
+Most viewed articles
+	Last 24 hours, last 7 days, most talked about
+	
+Best sellers from shop

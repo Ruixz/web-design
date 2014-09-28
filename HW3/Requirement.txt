@@ -1,0 +1,19 @@
+PART 1 - Reading Assignment (Beginning CSS - Chapter 9, 10)
+
+PART 2 - Reading Assignment (Sams_CSS_Chapter9-10-11-12)
+
+PART 3 - Do all the exercises at the end of Chapter 9 and 10 from Beginning CSS Book
+
+PART 4 - Programming Assignment
+Create an HTML page that uses each selector at least once.
+You don't need a composition or a complete page.
+You could put random sentences, images, or paragraphs on the same page.
+Here is a list of selectors that you need to use:
+http://www.w3schools.com/cssref/css_selectors.asp
+
+PART 5 - Programming Assignment
+Attached is the screenshot of a website.
+Create a CSS layout for this website.
+You could use different images, and place random text if you want.
+Your design doesn't have to be exactly the same as the sample pages.
+Try to create a layout as close as possible.
