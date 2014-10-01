@@ -1,0 +1,238 @@
+*{
+	background:WhiteSmoke;
+}
+
+body{
+	margin:0;
+	margin-bottom: 70px;
+	padding:0px;
+	border: 1px dashed blue;
+}
+.main{
+	max-width:800px;
+	margin:10px auto;
+	border: 1px dashed green;
+}
+.classSelector {
+	color: CadetBlue;
+	}
+#idSelector{
+	color:Coral ;
+	}
+p{
+	background:Snow;
+	}
+
+div, p{
+	padding:10px;
+}
+
+div div p{
+	background:Aquamarine;
+}
+div> div > p{
+	color: Cyan ;	
+}
+
+div  + p{
+	background: Azure;
+}
+
+p ~ ul{
+	background: red;
+}
+
+a[target]{
+	background: CornflowerBlue;
+}
+
+a[target=_blank] { 
+    background-color: yellow;
+}
+
+[title~=flower] {
+    border: 5px solid yellow;
+}
+
+[lang|=en] {
+	background: yellow;
+}
+
+a[href^="https"]{
+	background: GreenYellow;
+}
+
+div[class$="test"] {
+    background: Green;
+}
+
+div[class*="sub"] {
+    background: LawnGreen ;
+}
+
+a:active { 
+    background-color: Aquamarine ;
+}
+.ptag > p::after { 
+    content: " - Remember this";
+}
+
+.ptag > p::before { 
+    content: "Read this: ";
+}
+
+input:checked {
+    height: 50px;
+    width: 50px;
+}
+
+input[type=text]:disabled {
+    background: #dddddd;
+}
+
+input[type=text]:enabled {
+    background: #ffff00;
+}
+
+p:empty {
+    width: 100px;
+    height: 20px;
+    background: #ff0000;
+}
+
+p:first-child {
+    border:1px dashed HotPink;
+}
+
+div > div > p::first-letter {
+    font-size: 200%;
+    color: #8A2BE2;
+}
+
+.firstline p::first-line {
+    background-color: yellow;
+}
+
+p:first-of-type {
+    font-family: Arial, Helvetica, sans-serif;	
+}
+
+input[type=text]:focus {
+    background-color: GreenYellow;
+}
+
+a:hover {
+	color:Maroon;
+}
+
+input:in-range {
+    border: 2px solid yellow;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    background-color: LightCyan;
+}
+
+p:lang(it) { 
+    background: SandyBrown;
+}
+
+p:last-child {
+	border:1px dashed Gold;
+}
+
+p:last-of-type{
+	color:Purple;
+}
+
+a:link{
+	color:black;
+}
+p {
+    color: #000000;
+}
+
+:not(p) {
+    color: #ff0000;
+}
+
+div  p:nth-child(2) {
+    background: Plum;
+}
+
+p:nth-last-child(2){
+	background: grey;
+}
+
+p:nth-last-of-type(2){
+	background: gold;
+}
+
+p:nth-of-type(3){
+	background: Teal;
+}
+
+p:only-of-type{
+	color:SaddleBrown;
+}
+
+p:only-child{
+	color:MidnightBlue;
+}
+
+input:optional{
+	color:MidnightBlue;
+}
+
+input:required{
+	color:RosyBrown ;
+}
+
+input:out-of-range {
+    background:Gold;
+}
+
+input:-moz-read-only { /* For Firefox */
+    color:Pink;
+}
+
+input:read-only {
+    color:Pink;
+}
+
+.accessible input:-moz-read-write { /* For Firefox */
+    background: yellow;
+}
+
+.accessible input:read-write {
+    background: yellow;
+}
+
+:root{
+	margin:0;
+	padding:0;	
+	border: 1px dashed blue;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+}
+
+::selection {
+    color: red;
+    background: yellow;
+}
+
+:target {
+    border: 2px solid #D4D4D4;
+    background-color: #e5eecc;
+}
+
+a:visited { 
+    background-color: grey;
+}
