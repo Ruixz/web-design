@@ -1,0 +1,25 @@
+PART 1 - READING ASSIGNMENT (Beginning HTML and CSS)
+ Ch 10. Design Issues
+
+PART 2 - READING ASSIGNMENT (Beginning CSS for Web Design)
+ Ch 3. Selectors
+ Ch 4. The Cascade and Inheritance
+
+PART 3 - READING ASSIGNMENT (Beginning CSS for Web Design)
+ Ch 5. Text Manipulation
+ Ch 6. Fonts
+
+PART 4 - Do all the exercises at the end of Chapter 3.
+PART 5 - Do all the exercises at the end of Chapter 4.
+PART 6 - Do all the exercises at the end of Chapter 5.
+PART 7 - Do all the exercises at the end of Chapter 6.
+
+PART 8 - Convert the following paper-based form to an HTML form. Use CSS to style the form elements.
+http://www.northeastern.edu/hrm/pdfs/hr-payroll/temporary-non-student-application.pdf
+
+Some CSS tutorials for form elements:
+ http://techstream.org/Web-Design/CSS-for-Form-Elements
+ http://www.sitepoint.com/style-web-forms-css/
+
+PART 9 - Redo part 5 using Bootstrap form elements. Your form doesn't have to be 100% identical to the paper form.
+http://getbootstrap.com/components/
