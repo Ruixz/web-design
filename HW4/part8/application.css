@@ -1,0 +1,93 @@
+* {
+	margin: 0px;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+h1, h2, h3, h4, h5, h6{
+	padding: 5px;
+	color:#770000;
+}
+img{
+	width:290px;
+}
+
+h1, h2{
+	padding: 5px;
+	text-align:center;
+}
+
+h1{
+	margin-top:25px;
+	font-size: 20px;	
+}
+
+h2{
+	text-decoration:underline;
+	font-size: 15px;
+	font-weight: normal;
+}
+
+h5{
+	font-size: 15px;
+	padding-left: 15px;
+}
+
+.note{
+	font-weight: bold;
+	text-decoration: underline;
+	padding:10px 0px 10px 0px;
+}
+
+body{
+	background-color: #cccccc;
+	font-size: 14px;
+}
+div{
+	overflow:auto;
+}
+img{
+	float:left;
+}
+.right{
+	float:right;	
+}
+.left{
+	float:left;
+	width:400px;
+}
+
+u{
+	color:#ff0000;
+}
+
+.main{
+	margin:auto;
+	width:900px;
+	background-color:#ffffff;
+	padding:20px;
+}
+
+.form{
+	border-radius:20px;
+	border: 1px solid black;
+	padding:10px 20px 10px 20px;
+}
+
+.formsection{
+	margin: 10px 0px 10px 10px;
+}
+
+.signnote{
+	margin-top: 20px;
+	text-align:center;
+	color:black;
+}
+
+.signature{
+	margin: 20px 20px 20px 80px;
+}
+form *{
+	margin:5px;
+}
+.colum-2{
+	width:2em;
+}
