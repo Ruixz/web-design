@@ -1,0 +1,33 @@
+PART 1 - Reading Assignment (Beginning JavaScript - Available Under Reference Materials)
+   Chapter 1. Introduction to JavaScript and the Web
+   Chapter 2. Data Types and Variables
+   Chapter 3. Decisions, Loops, and Functions
+   Chapter 4. Common Mistakes, Debugging, and Error Handling
+
+PART 2 - Do all the exercises at the end of each chapter
+
+PART 3 - Reading Assignment
+http://designshack.net/articles/css/5-simple-and-practical-css-list-styles-you-can-copy-and-paste
+
+PART 4 - Redesign the MSIS website using BootStrap.
+http://msis.neu.edu
+You could use the Bootstrap libraries from CDN, or download to your computer.
+We created a simple Bootstrap page in the last lecture.
+You could use other images if you would like.
+Just submit the link to the Bootstrap page on COE.
+
+PART 5 - Redesign the MSIS website using MetroUI.
+http://msis.neu.edu
+You could use the MetroUI libraries from CDN, or download to your computer.
+To be uploaded to COE servers.
+Just submit the link to the MetroUI page on COE.
+
+PART 6 - Redesign the following website (http://www.coe.neu.edu/~sagar/) using BootFlat.
+http://bootflat.github.io
+http://bootflat.github.io/documentation.html
+
+PART 7 - Convert the following form (http://utahpests.usu.edu/uppdl/images/uploads/UPPDL%20Arthropod%20Submission%20Form%202011%20Final.jpg) into a web-based form using Flat-UI form elements. Your form doesn't have to be 100% identical to the paper form
+http://designmodo.github.io/Flat-UI/
+http://designmodo.github.io/Flat-UI/components
+
+due by Oct 16
