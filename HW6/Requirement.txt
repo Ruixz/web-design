@@ -1,0 +1,27 @@
+PART 1 - Reading Assignment (Beginning JavaScript - Available Under Reference Materials)
+   Ch 5. JavaScript — An Object-Based Language
+   Ch 6. Programming the Browser
+   Ch 7. HTML Forms: Interacting with the User
+   Ch 8. Windows and Frames
+   Ch 9. String Manipulation
+   Ch 10. Date, Time, and Timers
+
+PART 2 - Do all the exercises at the end of each chapter
+
+PART 3 - In the HTML DOM object model, the document object represents your web page.
+The document object is the owner of all other objects in your web page.
+If you want to access objects in an HTML page, you always start with accessing the document object.
+Use ALL THE METHODS ONCE (http://www.w3schools.com/js/js_htmldom_document.asp) on a page you create to access and manipulate HTML.
+
+PART 4 - Reading Assignment (Beginning PHP)
+   Ch 3. PHP Language Basics
+   Ch 4. Decisions and Loops
+   Ch 5. Strings
+   Ch 6. Arrays
+   Ch 7. Functions
+
+PART 5 - Do all the exercises at the end of each chapter
+
+Due Date
+Sunday, October 26, 2014
+11:59 PM
