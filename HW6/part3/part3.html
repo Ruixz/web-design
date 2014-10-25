@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Part3</title>
+<script>
+function getValue()
+  {
+  var x=document.getElementById("myHeader");
+  alert(x.innerHTML);
+  }
+
+function getElements()
+  {
+  var x=document.getElementsByTagName("input");
+  alert(x.length);
+  }
+
+function myFunction() {
+    var x = document.getElementsByClassName("example");
+    x[0].innerHTML = "Hello World!";
+}
+
+function innerHTMLChange() {
+    document.getElementById("innerHTMLChangedemo").innerHTML = "Paragraph <strong>changed</strong>!";
+}
+
+function attributeSet() {
+    document.getElementById("attributeChange").align = "right";
+}
+
+function attributeChangeByParameter() {
+    document.getElementById("attributeChangeDemo").setAttribute("value", "Attribute Changed");
+}
+
+function styleChange() {
+	document.getElementById("styleChange").style.color = "#ff5500";
+}
+
+function createButton() {
+	var btn = document.createElement("BUTTON");
+	var t = document.createTextNode("CLICK ME");
+	btn.appendChild(t);
+	document.getElementById("createButton").appendChild(btn);
+}
+
+function removeButton() {
+	var removeDemo = document.getElementById("removeButton");
+	body.removeChild(removeDemo);
+}
+
+function sampe() {
+	
+}
+</script>
+<style>
+.ExampleName{
+	padding-top: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:1.2em;
+	color:#008B8B;
+}
+</style>
+</head>
+<body>
+
+<p class="ExampleName">getElementById Example</p>
+<h1 id="myHeader" onclick="getValue()">Click me!</h1>
+
+<p class="ExampleName">getElementsByTagName Example</p>
+<input type="text" size="20"><br/>
+<input type="text" size="20"><br/>
+<input type="text" size="20"><br/><br/>
+<input type="button" onclick="getElements()" value="How many input elements?" />
+
+<p class="ExampleName">getElementsByClassName Example</p>
+<div class="example">First div element with class="example".</div>
+<div class="example">Second div element with class="example".</div>
+<p>Click the button to change the text of the first div element with class="example" (index 0).</p>
+<button onclick="myFunction()">Try it</button>
+
+<p class="ExampleName">innerHTML Example</p>
+<p id="innerHTMLChangedemo" onclick="innerHTMLChange()">Click me to change my HTML content (innerHTML).</p>
+
+<p class="ExampleName">attribute Example</p>
+<p id="attributeChange" onclick="attributeSet()">Click me to change my align (attribute).</p>
+
+<p class="ExampleName">element.setAttribute(attribute,value) Example</p>
+<input type="submit" id="attributeChangeDemo" onclick="attributeChangeByParameter()" value="Click Me to Change Attribute"/>
+
+
+<p class="ExampleName">Change the style of an HTML element Example</p>
+<p id="styleChange" onclick="styleChange()">Click me to change my color.</p>
+
+<p class="ExampleName">Create an HTML element and Append it Example</p>
+<p id="createButton" onclick="createButton()">Click me to create a button.</p>
+
+<p class="ExampleName">RemoveChild Example</p>
+<button id="removeButton" onclick="removeButton()">Click to remove this button</button>
+<script>
+function removeButton() {
+	//alert("start");
+	var removeDemo = document.getElementById("removeButton");
+	//removeChild(removeDemo);
+	var result = removeDemo.parentElement.removeChild(removeDemo);
+	//alert("Parent object is: "+removeDemo.parentElement);
+	//alert(result);
+}
+</script>
+
+<p class="ExampleName">Replace Child Example</p>
+<ul id="replaceChildList"><li>Coffee</li><li>Tea</li><li>Milk</li></ul>
+<p id="demo">Click the button to replace the first item in the the list</p>
+<button onclick="replaceChildFunction()">Try it</button>
+<script>
+function replaceChildFunction() {
+	var textnode=document.createTextNode("Water");
+	var item=document.getElementById("replaceChildList").childNodes[0];
+	item.replaceChild(textnode,item.childNodes[0]);
+}
+</script>
+
+<p class="ExampleName">Write Example</p>
+<p>Below line is written by document.write</p>
+<script>
+document.write("Hello World!");
+</script>
+
+<p class="ExampleName">Add Events Handler Onclick Example</p>
+<p id="addEventsHandler">Click here to change my color.</p>
+<script>
+document.getElementById("addEventsHandler").onclick = function() {
+	document.getElementById("addEventsHandler").style.color = "#55aa33";
+}
+</script>
+
+<p class="ExampleName">cocument.anchors Example</p>
+<a name="html">HTML Tutorial</a><br>
+<a name="css">CSS Tutorial</a><br>
+<a name="xml">XML Tutorial</a><br>
+<p id="getAllAchors">Click the button to return number of anchors in the document.</p>
+<button onclick="getAllAchors()">Try it</button>
+<script>
+function getAllAchors() {
+    var x = document.getElementById("getAllAchors");
+    x.innerHTML = "Number of anchors: " + document.anchors.length;
+}
+</script>
+
+<p class="ExampleName">Show Number of Applets Example</p>
+<p id="appletsNumber" onclick="appletsNumber()">Click here to get the total applets number on this page.</p>
+<script>
+function appletsNumber() {
+	alert(document.applets.length);
+}
+</script>
+
+<p class="ExampleName">document.baseURI Example</p>
+<p id="baseURI">Click the button to display the baseURI</p>
+<button onclick="baseURIFunction()">Try it</button>
+<script>
+function baseURIFunction()
+{
+var x=document.getElementById("baseURI");
+x.innerHTML=document.baseURI;
+}
+</script>
+<p><strong>Note:</strong> The baseURI property is not supported in Internet Explorer.</p>
+
+<p class="ExampleName">document.body Example</p>
+<p id="documentBody" onclick="documentBody()">Click here to change body background color</p>
+<script>
+function documentBody(){
+	document.body.style.background = "#ccffcc";
+}
+</script>
+
+<p class="ExampleName">document.cookie Example</p>
+<p id="documentCookie">Click the button to return the cookies associated with the current document.</p>
+<button onclick="documentCookieFunction()">Try it</button>
+<script>
+function documentCookieFunction()
+{
+	var x=document.getElementById("documentCookie");
+	x.innerHTML="Cookies associated with this document: " + document.cookie;
+}
+</script>
+
+<p class="ExampleName">document.doctype Example</p>
+<p id="documentDoctype">Click the button to display the doctype name.</p>
+<button onclick="documentDoctype()">Try it</button>
+<script>
+function documentDoctype()
+{
+var x=document.getElementById("documentDoctype");
+x.innerHTML=document.doctype.name;
+}
+</script>
+<p><strong>Note:</strong> In Internet Explorer 8 and earlier, the doctype property returns <em>null</em> for HTML and XHTML documents, and will only work for XML documents.</p>
+
+<p class="ExampleName">document.documentElement Example</p>
+<p id="getDocumentElement">Click the button to display the node name of the documentElement</p>
+<button onclick="getDocumentElement()">Try it</button>
+<script>
+function getDocumentElement()
+{
+var x=document.getElementById("getDocumentElement");
+x.innerHTML=document.documentElement.nodeName;
+}
+</script>
+
+<p class="ExampleName">document.documentMode Example</p>
+This document is displayed in IE
+<script>
+document.write(document.documentMode);
+</script>
+mode
+<p><b>Note:</b> IE Only! The documentMode property is supported in IE8+.</p>
+<p><b>Note:</b> If no !DOCTYPE is specified, IE8 renders the page in IE5 mode!</p>
+
+<p class="ExampleName">document.documentURI Example</p>
+<p id="getdocumentURI">Click the button to display the location of this document</p>
+<button onclick="getdocumentURI()">Try it</button>
+<script>
+function getdocumentURI()
+{
+var x=document.getElementById("getdocumentURI");
+x.innerHTML=document.documentURI;
+}
+</script>
+<p><strong>Note:</strong> Internet Explorer does not support the documentURI property.</p>
+
+<p class="ExampleName">document.domain Example</p>
+<p id="documentDomain">Click the button to return the domain name of the server that loaded this document.</p>
+<button onclick="documentDomain()">Try it</button>
+<script>
+function documentDomain()
+{
+var x = document.getElementById("documentDomain");
+x.innerHTML=document.domain;
+}
+</script>
+
+<p class="ExampleName">document.domConfig Example</p>
+<p id="documentDomConfig">Click the button to return the configuration used when normalizeDocument() is invoked.</p>
+<button onclick="documentDomConfig()">Try it</button>
+<script>
+function documentDomConfig()
+{
+var x = document.getElementById("documentDomConfig");
+x.innerHTML=document.domConfig;
+}
+</script>
+
+<p class="ExampleName">Show Number of Embeds Example</p>
+<p id="embedsNumber" onclick="embedsNumber()">Click here to get the total embeds number on this page.</p>
+<script>
+function embedsNumber() {
+	alert(document.embeds.length);
+}
+</script>
+
+<p class="ExampleName">document.forms Example</p>
+<form name="Form1"></form>
+<form name="Form2"></form>
+<form></form>
+
+<p>Number of forms on this page:
+<script>
+document.write(document.forms.length);
+</script></p>
+
+<p class="ExampleName">document.head Example</p>
+<script>
+document.write(document.head);
+</script></p>
+
+
+<p class="ExampleName">document.images Example</p>
+<img src="http://placehold.it/350x150" alt="cat">
+<img src="http://placehold.it/350x200" alt="cat">
+<img src="http://placehold.it/350x300" alt="cat">
+<p>Click the button to display the URL of each img element in the document.</p>
+<button type="button" onclick="documentImages()">Try it</button>
+<p id="documentImages"></p>
+<script>
+function documentImages() {
+    var x = document.images;
+    var txt = "";
+    for (var i = 0; i < x.length; i++) {
+        txt = txt +  x[i].src + "<br>";
+    }
+    document.getElementById("documentImages").innerHTML = txt;
+}
+</script>
+
+<p class="ExampleName">document.implementation Example</p>
+<p id="documentImplementation">Click the button to check if this document has the feature HTML DOM 1.0</p>
+<button onclick="documentImplementation()">Try it</button>
+<script>
+function documentImplementation()
+{
+var imp=document.implementation;
+var x=document.getElementById("documentImplementation");
+x.innerHTML=imp.hasFeature("HTML","1.0");
+}
+</script>
+
+<p class="ExampleName">document.inputEncoding Example</p>
+<p id="documentInputEncoding">Click the button to check the encoding of this document</p>
+<button onclick="documentInputEncoding()">Try it</button>
+<script>
+function documentInputEncoding()
+{
+var x=document.getElementById("documentInputEncoding");
+x.innerHTML=document.inputEncoding;
+}
+</script>
+<p><strong>Note:</strong> Opera and Internet explorer 8 and earlier does not support the inputEncoding property.</p>
+
+
+<p class="ExampleName">document.lastModified Example</p>
+<p>This document was last modified on:</p>
+<script>
+document.write(document.lastModified);
+</script>
+
+<p class="ExampleName">document.links Example</p>
+<p><a href="/js/">JavaScript Tutorial</a></p>
+<p>Number of links on this page:
+<script>
+document.write(document.links.length);
+</script></p>
+
+<p class="ExampleName">document.readyState Example</p>
+<p>Loading status:</p>
+<script>
+document.write(document.readyState);
+</script>
+
+<p class="ExampleName">document.referrer Example</p>
+<p id="documentReferer">Click the button to return the referrer of the current document.</p>
+<button onclick="documentReferer()">Try it</button>
+<script>
+function documentReferer()
+{
+var x = document.getElementById("documentReferer");
+x.innerHTML="The referrer of the current document is: " + document.referrer;
+}
+</script>
+
+<p class="ExampleName">document.scripts Example</p>
+<p id="documentScriptsNumber" onclick="documentScriptsNumber()">Click here to get the total scripts number on this page.</p>
+<script>
+function documentScriptsNumber() {
+	alert(document.scripts.length);
+}
+</script>
+
+<p class="ExampleName">document.strictErrorChecking Example</p>
+<script>
+	document.write(document.strictErrorChecking);
+</script>
+<p>The strictErrorChecking property is not supported in any of the major browsers.</p>
+
+<p class="ExampleName">document.title Example</p>
+The title of the document is: 
+<script>
+document.write(document.title);
+</script>
+
+<p class="ExampleName">document.URL Example</p>
+The full URL of this document is: 
+<script>
+document.write(document.URL);
+</script>
+</body>
+</html>
