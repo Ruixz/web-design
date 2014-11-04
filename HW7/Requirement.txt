@@ -1,0 +1,30 @@
+PART 1 - READING ASSIGNMENT (Beginning PHP - Attached)
+Ch.8- Objects
+Ch.9- Handling HTML Forms with PHP
+Ch.10- Preserving State With Query Strings, Cookies, and Sessions
+
+PART 2 - READING ASSIGNMENT (jQuery in Action - Attached)
+Ch.1- Introducing jQuery
+Ch.2- Selecting the elements upon which to act
+Ch.3- Bringing pages to life with jQuery
+Ch.4- Events are where it happens!
+
+PART 3 - ONLINE jQUERY TUTORIAL
+www.w3schools.com/jquery
+
+PART 4 - PROGRAMMING ASSIGNMENT
+Use each selector once on a single page.
+There doesn't need to be any content; you could print like "P tag clicked with ... selector", or alert a message, or change the font color, background color, or add border.
+http://www.w3schools.com/jquery/jquery_ref_selectors.asp
+
+PART 5 - Do all the exercises at the end of each chapter from Beginning PHP
+
+PART 6 - Programming Assignment
+Write a PHP page to read and display the user input from HW5-Part7. You will have to read form data using $_POST or $_GET (you decide which one to use), and simply display it using echo or print.
+
+PART 7 - Programming Assignment
+Redo PART 6 to Combine form and and php page into a single page, and use PHP_SELF to handle the form submission from the same page as we did in the class.
+
+PART 8 - Programming Assignment
+Write a PHP page that uses each of the String functions at least once. Use echo or print to print the output of the function. You could use any random string to demonstrate the functions.
+http://us1.php.net/manual/en/ref.strings.php
