@@ -1,21 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
+if (isset($_POST['action']) && $_POST['action'] == 'submitted') { 
+    print '<pre>'; 
+
+    print_r($_POST); 
+    print '<a href="'. $_SERVER['PHP_SELF'] .'">Please try again</a>'; 
+
+    print '</pre>'; 
+} else { 
+?> 
 
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <link href="form.css" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" href="flat-ui.min.css">	
-<title>part6</title>
+<title>part7</title>
 </head>
 <body>
-
-<?php
-if(isset($_POST['submit'])) 
-{ 
-    $name = $_POST['name'];
-    echo "User Has submitted the form and entered this name : <b> $name </b>";
-}
-?>
 
 <div id="wrapper">
 	<div id="header">
@@ -141,11 +141,14 @@ if(isset($_POST['submit']))
 						<p><label for="date">Date:</label><input type="text" name="txtdate" id="date"/></p>
 						<p><label for="time">Time:</label><input type="text" name="txtTime" id="time"/></p>				
 				</div>
+				<input type="hidden" name="action" value="submitted"> 
 				<div><input type="submit" name="submit" value="submit" ></div>
 			</div>
 	</form>
 	</div>
 </div>
-<script type="text/javascript" src="flat-ui.min.js"></script>
+
 </body>
-</html>
+<?php 
+} 
+?> 
