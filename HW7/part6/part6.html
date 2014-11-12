@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="form.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="flat-ui.min.css">	
+<title>part6</title>
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<img src="header.jpg" alt="header img"/>
+	</div>
+	<div id="content">
+	<form action="part6.php" method="post">
+		<div id="submitted">
+			<p><span>SUBMITTER INFORMATION</span><span> Directions for Submission: <span>Insect/Spider</span> or <span>Disease</span></span></p>		
+			<p><label for="name">Name:</label><input type="text" name="txtName" id="name"/></p>
+			<p><label for="address">Address:</label><input type="text" name="txtAddress" id="address"/></p>
+			<p>
+				<label for="city">City:</label>
+				<input type="text" name="txtCity" id="city"/>
+				<label for="state">State:</label>
+				<input type="text" name="txtState" id="state"/>
+			</p>
+			<p>	
+				<label for="zip">Zip:</label>
+				<input type="text" name="txtZip" id="zip"/>
+				<label for="country">Country:</label>
+				<input type="text" name="txtCountry" id="country"/>
+			</p>
+			<p>
+				<label for="phone">Phone:</label>
+				<input type="text" name="txtPhone" id="phone" value="(    )"/>
+				<label for="cell">Cell:</label>
+				<input type="text" name="txtCell" id="cell"  value="(    )"/>
+			</p>
+			<p><label for="email">Email:</label><input type="text" name="txtEmail" id="email"/></p>
+		</div>
+		<div id="contact">
+			<h4>CONTACT ME BY</h4>
+			<input type="checkbox" name="chkContact" id="mail" value="Regular Mail" /><label for="mail">Regular Mail</label>
+			<input type="checkbox" name="chkContact" id="phone" value="Regular Mail" /><label for="phone">Phone</label>
+			<input type="checkbox" name="chkContact" id="email" value="Email" /><label for="email">Email</label>
+		</div>
+		<div id="requested">
+			<h4>INFORMATION REQUESTED</h4>
+			<input type="checkbox" name="chkReq" id="identification" value="Identification" /><label for="identification">Identification</label>
+			<input type="checkbox" name="chkReq" id="recommendations" value="Control Recommendations" /><label for="recommendations">Phone</label>
+		</div>
+		<hr/>
+		<div id="collection">
+			<p><span>COLLECTION INFORMATION:</span><span>What plant species was the sample collected from</span><span>PLANT INFO:</span></p>
+			<p>
+				<label for="plantComName">Host Plant Common Name:</label>
+				<input type="text" name="txtPlantComName" id="plantComName"/>
+				<label for="plantAge">Plant age:</label>
+				<input type="text" name="txtPlantAge" id="plantAge"/>
+				<label for="plantSize">Size:</label>
+				<input type="text" name="txtPlantSize" id="plantSize"/>
+			</p>
+			<p>
+				<label for="plantSciName">Host Plant Scientific Name/Variety:</label>
+				<input type="text" name="txtPlantSciName" id="plantSciName"/>
+				<label for="numAffected">Number of plants affected:</label>
+				<input type="text" name="txtNumAffected" id="numAffected"/>
+			</p>
+			<p>
+				<label for="other">If not collected from a plant,then please describe:</label>
+				<input type="text" name="txtOther" id="other"/>
+				<label for="percAffected">Percent of plants affected:</label>
+				<input type="text" name="txtPercAffected" id="percAffected"/>
+			</p>
+			<p>
+				<label for="worsen1">Percent of plants affected:</label>
+				<input type="radio" name="worsenRadio" id="worsen1" checked="checked" value="Y"/>Y
+				<input type="radio" name="worsenRadio" id="worsen2" value="N"/>N
+			</p>
+	  </div>
+	  <hr/>
+	  <div id="description">
+	  	<p><span>PLANT SYMPTOM(S) DESCRIPTION: </span>Describle in detail what is wrong with the plant and what parts are affected</p>
+	  	<textarea name="txtWorsen" id="symptom"></textarea>
+	  	<p><span>PEST/SYMPTOM IMAGES:</span>If possible, please provide photes of the affected plant(s). Arange of photos from landscape-level shots to close-ups are ideal. Including photos can aid diagnosis.</p>
+			<p>
+				<label for="imageIncluded1">Did you include images with your submission? </label>
+				<input type="radio" name="imageIncludedRadio" id="imageIncluded1" checked="checked" value="Y"/>Y
+				<input type="radio" name="imageIncludedRadio" id="imageIncluded2" value="N"/>N
+			</p>	
+			<p>
+				<label for="imageIncludedManner">I include pictures as: </label>
+				<input type="radio" name="pictureIncludedRadio" id="imageIncludedManner" value="Printed photos submitted with the sample"/>Printed photos submitted with the sample
+				<input type="radio" name="pictureIncludedRadio" id="imageIncludedManner" value="Digital images emailed to ryan.davis@usu.edu"/>Digital images emailed to ryan.davis@usu.edu
+			</p>	
+		</div>
+		<hr/>
+		<div id="pest info">
+	  	<p><span>PEST INFOTMATION: </span></p>
+	  	<p>
+	  		<label for="specimens">Number of Specimens in Sample:</label>
+				<input type="text" name="txtSpecimens" id="specimens"/>
+	  		<label for="individuals">Number of Individuals in Observed:</label>
+				<input type="text" name="txtIndividuals" id="individuals"/>
+			</p>
+			<p><label for="appearence">Describle the Appearence of the Pest:</label></p>
+	  	<textarea name="txtAppearence" id="appearence"></textarea>
+			<p><span>EXTRA INFORMATION:</span>Use the back of this sheet to include additional information:e.g. irrigation type and rate, fertilization type and rate, pesticide, fungucides or herbicides applied, map/schematic of property and location of affected plants includeing directional arrows(N,E,S,W), general care/maintenance or situation of plants,planting depth or method, progression of symptoms,etc.</p>	
+		</div>
+		<hr/>
+			<div id="diagnosis">
+				<div>
+					<p><span>DIAGNOSIS</span>(Lab use only)</p>
+					<p>
+						<label for="commonName">Common Name:</label>
+						<input type="text" name="txtCommonName" id="commonName"/>
+						<label for="family">Family:</label>
+						<input type="text" name="txtFamily" id="family"/>
+					</p>
+					<p>
+						<label for="genus">Genus:</label>
+						<input type="text" name="txtGenus" id="genus"/>
+						<label for="species">Species:</label>
+						<input type="text" name="txtSpecies" id="species"/>
+					</p>					
+				</div>
+				<div id="reponse">
+						<p><span><label for="responseManner">RESPONSE:</label></span></p>
+						<input type="radio" name="responsRadio" id="responseManner1" value="Regular Mail"/>Regular Mail
+						<input type="radio" name="responsRadio" id="responseManner2" value="Email"/>Email
+						<input type="radio" name="responsRadio" id="responseManner3" value="Phone"/>Phone
+						<p><label for="date">Date:</label><input type="text" name="txtdate" id="date"/></p>
+						<p><label for="time">Time:</label><input type="text" name="txtTime" id="time"/></p>				
+				</div>
+				<div><input type="submit" name="submit" value="submit" ></div>
+			</div>
+	</form>
+	</div>
+</div>
+<script type="text/javascript" src="flat-ui.min.js"></script>
+</body>
+</html>

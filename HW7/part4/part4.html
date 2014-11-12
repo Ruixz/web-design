@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+		$(document).ready(function(){
+			function aniDiv(){
+		    $("#animateDiv").animate({width:"50%"},"slow");
+		    $("#animateDiv").animate({width:"100%"},"slow",aniDiv);
+		  }
+		  aniDiv();
+		  $(".btn1").click(function(){
+		    $(":animated").css("background-color","red");
+		  });
+		  $("#all").click(function(){
+		    $("*").hide();
+		  });
+		  $("h2").hover(function(){
+		    $(this).addClass("red");
+		    $("h2,span").addClass("important");
+		  });
+		  $("p:first").hover(function(){
+		    $(this).css("background-color","yellow");
+		  });
+		  $("p:last").hover(function(){
+		    $(this).append("this is last p element,don't touch me!");
+		  });		
+		  $("p:even").click(function(){
+		    alert("these are even p elements,don't touch me!");
+		  });	 
+		  $("p:odd").click(function(){
+		    alert("these are odd p elements,don't touch me!");
+		  });	 
+		  $("#idButton").click(function(){
+		    $("#id").hide();
+		  });
+		  $("label:first-child").hover(function(){
+		    $("#firstDivElement").slideUp("slow");
+		  });
+		  $("label:last-child").hover(function(){
+		    $(this).append(" which is the last child label element,");
+		  });
+		  $("label:last-of-type").hover(function(){
+		    $(this).append(" and is the last of label tpye element.");
+		  });
+		  $("label:nth-child(2)").hover(function(){
+		    $(this).append(" This is the 2nd label elements.");
+		  });
+		  $("label:nth-last-child(2)").hover(function(){
+		    $(this).append(" This is the 2nd label elements, counting from the last child.");
+		  });
+		  $("label:nth-last-of-type(2)").hover(function(){
+		    $(this).prepend(" This label element is the 2nd label element, counting from the last child.");
+		    $(this).css("background-color","yellow");
+		  });
+		  $("strong:first-of-type").click(function(){
+		    $(this).append(" which is the first-of-type strong element.");
+		  });
+		  $("div:nth-of-type(2)").hover(function(){
+		    $(this).prepend(" This is div element which is the 2nd div of its element.");
+		  });
+		  $("em:only-child").hover(function(){
+		    $(this).css("background-color","green");
+		  });
+		  $("em:only-child").hover(function(){
+		    $(this).css("background-color","green");
+		  });
+		  $("h3:only-of-type").hover(function(){
+		    $(this).fadeToggle();
+		  });
+		  $("div>strong").hover(function(){
+		    $("div>strong").fadeOut();
+		  });
+		  $("ol li").hover(function(){
+		    $(this).fadeOut();
+		  });
+		  $("div+ol").hover(function(){
+		    $(this).fadeTo("slow",0.5);
+		  });
+		  $("div~div").hover(function(){
+		    $(this).fadeTo("slow",0.8);
+		  });
+		  $(".class").mousemove(function(){
+		    $(".class").addClass("important");
+		    $(".class,.notblue").addClass("blue");
+		  });
+		  $("ul li:eq(2)").css("background-color","gray");
+		  $("ul li:gt(2)").css("background-color","red");
+		  $("ul li:lt(3)").css("font-style","oblique");
+		  $("div:not(.notGray)").css("background-color","lightgray");
+		  $(":header").css("background-color","pink");
+		  $("input").focus();
+  		$(":focus").css("background-color","yellow");
+  		$("p:contains(message)").css("background-color","orange");
+  		$("p:has(span)").css("border","solid red");
+  		$(":empty").css("background-color","yellow");
+  		$("th:parent").css("background-color","blue");
+  		$(":hidden").show(3500);
+  		$("h5:visible").css("background-color","red");
+  		$(":root").css("background-color","#6495ed");
+  		$("p:lang(ch)").css("background-color","yellow");
+  		$("[href]").css("border","solid black");
+  		$("[id=choose]").css("background-color","yellow");
+  		$("ol[id!='ol']").css("background-color","orange");
+  		$("a[href$='.org']").css("background-color","yellow");
+  		$("p[title|='Tomorrow']").css("background-color","blue");
+  		$("p[title^='Tomo']").append("append for elements starting with Tom");
+  		$("p[name~='nation']").css("background-color","white");
+  		$("p[name*='nation']").css("background-color","white");
+  		$(":input").css("background-color","green");
+  		$(":text").css("background-color","red");
+  		$(":password").css("background-color","white");
+  		$(":radio").wrap("<span style='background-color:yellow' />");
+  		$(":checkbox").wrap("<span style='background-color:orange' />");
+  		$(":submit").css("background-color","gray");
+  		$(":reset").css("background-color","red");
+  		$(":image").css("width","62");
+  		$(":image").css("height","62");
+  		$(":file").css("background-color","white");
+  		$(":disabled").css("background-color","black");
+  		$(":enabled").css("width","150");
+  		$(":selected").css("background-color","red");
+  		$(":checked").css("width","50");
+		});
+		</script>
+		<style type="text/css">
+			.important
+			{
+				font-weight:bold;
+				font-size:xx-large;
+			}
+			.blue
+			{
+				color:blue;
+			}
+			.red
+			{
+				color:red;
+			}
+			#firstDivElement
+			{
+				padding:50px;
+				text-align:center;
+				background-color:#e5eecc;
+				border:solid 1px #c3c3c3;
+				display:none;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<button id="all">Hide all elements</button>
+		<h2>This is a heading2</h2>
+		<h3>This is a heading3</h3>
+		<h4>This is a heading4</h4>
+		<h5>This is a heading5</h5>
+		<h5 style="display:none">This is a hidden heading5</h5>
+		<p>This is a paragraph.</p>
+		<button id="idButton">Hide this p element</button>
+		<p id="id">This is another paragraph.</p>	
+		<p class="class">This is class test.</p>
+		<p class="notblue">This is not blue <span>class test.</span></p>
+		<p style="display:none">This is a hidden paragraph.</p>
+		<div style="display:none">This is a hidden div element.</div>
+		<button class="btn1">Change color of the animated element</button>
+		<div id="animateDiv">Div 1</div>
+		<div class='notGray'>
+			<label id="firstChildLabel" for="firstDivElement">show first child of div element</label>
+			<div id="firstDivElement" class='notGray'>this is first <strong>child</strong> of div a element</div>
+			<br/>
+			<strong>this is a strong element</strong>
+			<br/>
+			<div>
+				<label><strong>first label</strong></label>
+				<label><strong>second label</strong></label>
+				<br/>
+				<label><strong>third label</strong></label>
+				<br/>
+				<label><strong>forth label</strong></label>
+				<br/>
+				<label><strong>fifth label</strong></label>
+			</div>
+			<div class='notGray'>
+				<em>this is em element which is only child.</em>
+			</div>
+			<ol id="ol">
+			this is an order list
+				<li id="choose">list 1</li>
+				<li>list 2</li>
+				<li>list 3</li>
+				<li>list 4</li>
+		  </ol>
+		  <ol>
+			this is an order list
+				<li id="choose">ol 1</li>
+				<li>ol 2</li>
+				<li>ol 3</li>
+				<li>ol 4</li>
+		  </ol>
+		  <ul>
+		  this is a disordered list
+				<li>list 1</li>
+				<li>list 2</li>
+				<li>list 3</li>
+				<li>list 4</li>
+		  </ul>
+			<input name ="firstName" type="text" value="enter"/>
+	
+			<p>this is a message.</p>
+			<table border="1">
+				<tr>
+				  <th>Company</th>
+				  <th></th>
+				  <th>Country</th>
+				</tr>
+				<tr>
+				<td>Alfreds Futterkiste</td>
+				<td>Maria Anders</td>
+				<td></td>
+				</tr>
+			</table>
+			<p lang="ch">ni hao!</p>
+			<p href="ch">an attribute!</p>
+			<a href="http://www.w3schools.com">w3schools.com</a><br>
+			<a href="http://www.wikipedia.org">wikipedia.org</a><br>
+			<a href="http://www.google.com">Google.com</a><br>
+			<p title="Tomorrow-the day after today">Tomorrow-the day after today.</p>
+			<p name="asf nation dsfa">This is a paragraph whose element containing "nation".</p>
+			<p name="asfnationdsfa">This is a paragraph whose element containing "nation".</p>
+			<form action="">
+			Password: <input type="password" name="password"/><br>
+			Male:<input type="radio" name="sex" value="m"/><br>
+			Female<input type="radio" name="sex" value="f"/><br>
+				apple:
+				<input type="checkbox" name="fruit" value="apple" checked="checked"/>
+				orange:
+				<input type="checkbox" name="fruit" value="orange"/>
+				banana:
+				<input type="checkbox" name="fruit" value="banana"/>
+				<br/>
+				<input type="reset" value="Reset"/>
+				<input type="submit"/><br/>
+				<input type="button" value="A button"/><br/>
+				<input type="image" src="http://profile.ak.fbcdn.net/hprofile-ak-prn1/t5/276634_369463984811_782823991_q.jpg" width="31" height="30"/><br/>
+				File: <input type="file" name="myfile" value="please select a file"/><br/>
+				ID:<input type="text" name="id" disabled="disabled"/>
+				<option>Father</option>
+			  <option selected="selected">Mother</option>
+			  <option>Child</option>
+			</form>
+		</div>
+
+	</body>
+
+</html>
